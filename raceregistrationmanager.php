@@ -23,12 +23,25 @@ class RaceRegistrationManager extends Module
     }
 
     public function install()
-    {
-        return parent::install() && 
-            $this->installDB() && 
-            $this->registerHook('actionValidateOrder') &&
-            $this->registerHook('displayBackOfficeHeader');
+{
+    // Verificar que el módulo Product Fields Manager esté instalado
+    if (!Module::isInstalled('an_productfields')) {
+        $this->_errors[] = $this->l('Este módulo requiere que esté instalado "Product Fields Manager" (an_productfields). Por favor, instálalo primero.');
+        return false;
     }
+    
+    // Verificar que el módulo esté activo
+    if (!Module::isEnabled('an_productfields')) {
+        $this->_errors[] = $this->l('El módulo "Product Fields Manager" (an_productfields) debe estar activado para instalar este módulo.');
+        return false;
+    }
+
+    return parent::install() && 
+        $this->installDB() && 
+        $this->registerHook('actionValidateOrder') &&
+        $this->registerHook('displayBackOfficeHeader');
+}
+
 
     public function uninstall()
     {
