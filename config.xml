@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>raceregistrationmanager</name>
+    <displayName><![CDATA[Race Registration Manager]]></displayName>
+    <version><![CDATA[4.0.6]]></version>
+    <description><![CDATA[Gestión avanzada de inscripciones para múltiples carreras de motos con soporte para múltiples inscripciones por pedido]]></description>
+    <author><![CDATA[Race Manager Pro]]></author>
+    <tab><![CDATA[administration]]></tab>
+    <is_configurable>1</is_configurable>
+    <need_instance>0</need_instance>
+    <limited_countries></limited_countries>
+</module>

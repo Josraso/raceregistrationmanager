@@ -1,0 +1,221 @@
+.race-registration-panel .panel-heading {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.field-selection {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.field-table {
+    margin-bottom: 0;
+}
+
+.field-table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+.field-row:hover {
+    background-color: #f9f9f9;
+}
+
+.order-num {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #337ab7;
+    color: white;
+    border-radius: 50%;
+}
+
+.move-up, .move-down {
+    padding: 3px 5px;
+    margin: 0 2px;
+}
+
+tr.validated {
+    background-color: #f0fff0;
+}
+
+tr.published {
+    background-color: #f0f8ff;
+}
+
+.table thead th {
+    background-color: #f7f7f7;
+}
+
+.actions {
+    white-space: nowrap;
+}
+
+.actions .btn {
+    margin-bottom: 3px;
+    margin-right: 3px;
+}
+
+/* Estilos para el panel de filtros */
+#filter-form {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+}
+
+#filter-form .form-group {
+    margin-bottom: 10px;
+}
+
+#filter-form label {
+    margin-right: 5px;
+    display: block;
+    font-weight: 600;
+}
+
+/* Responsive para filtros */
+@media (max-width: 992px) {
+    #filter-form .row > div {
+        margin-bottom: 10px;
+    }
+}
+
+/* Mensaje cuando una acción está en proceso */
+.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/* Mejorar visibilidad de botones en el panel */
+.panel-footer .btn {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+/* Nueva columna Inscrito */
+.inscrito-cell {
+    text-align: center;
+}
+
+.inscrito-badge {
+    padding: 3px 6px;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 11px;
+}
+
+.inscrito-badge.inscrito {
+    background-color: #5cb85c;
+    color: white;
+}
+
+.inscrito-badge.no-inscrito {
+    background-color: #f0f0f0;
+    color: #777;
+}
+
+/* Selector de carrera */
+.panel .form-inline {
+    margin-top: 15px;
+}
+
+/* Estadísticas de carrera */
+.alert-info h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.alert-info .row > div {
+    text-align: center;
+    padding: 10px;
+    border-right: 1px solid #bee5eb;
+}
+
+.alert-info .row > div:last-child {
+    border-right: none;
+}
+
+/* Label para estado de carrera */
+.label {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+}
+
+.label-success {
+    color: #fff;
+    background-color: #5cb85c;
+}
+
+.label-default {
+    color: #fff;
+    background-color: #777;
+}
+
+/* Mejorar aspecto del selector de carrera */
+.panel-body .form-horizontal .form-group {
+    margin-bottom: 20px;
+}
+
+.panel-body .form-horizontal select {
+    max-width: 100%;
+}
+
+/* Botón de archivo */
+.btn-warning {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+
+.btn-warning:hover {
+    color: #fff;
+    background-color: #ec971f;
+    border-color: #d58512;
+}
+
+/* Mejorar alineación de elementos en filtros */
+.filter-status-label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.btn-group[data-toggle="buttons"] {
+    display: block;
+}
+
+/* Items por página */
+.items-per-page label {
+    margin-right: 10px;
+}
+
+.items-per-page select {
+    width: auto;
+    display: inline-block;
+}
+/* Estilos para múltiples inscripciones */
+.multiple-registrations {
+    border-left: 3px solid #337ab7;
+    background-color: #f0f8ff;
+}
+
+.registration-badge {
+    display: inline-block;
+    padding: 2px 6px;
+    font-size: 10px;
+    background-color: #337ab7;
+    color: white;
+    border-radius: 3px;
+    margin-left: 5px;
+}
