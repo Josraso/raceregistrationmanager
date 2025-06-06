@@ -1,7 +1,7 @@
 Módulo de Gestión de Inscripciones para Múltiples Carreras de Motos
-Versión: 4.0.1
+Versión: 4.0.
 
-NUEVAS CARACTERÍSTICAS v4.0.1:
+NUEVAS CARACTERÍSTICAS v4.0.5:
 - Corregido: Soporte para múltiples inscripciones en un mismo pedido
 - Corregido: Visualización del HTML de exportación
 - Mejorado: Detección y procesamiento de múltiples productos de carrera por pedido
