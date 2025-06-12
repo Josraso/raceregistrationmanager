@@ -1,0 +1,19 @@
+$(document).ready(function() {
+    // Actualizar vista previa al cambiar configuración
+    $('input[name="display_fields[]"], select[name="category_field"]').change(function() {
+        updatePreview();
+    });
+
+    function updatePreview() {
+        var formData = $('form').serialize();
+        
+        $.ajax({
+            url: document.location.href,
+            type: 'POST',
+            data: formData + '&ajax=1&action=updatePreview',
+            success: function(data) {
+                $('.cms-preview').html(data);
+            }
+        });
+    }
+});
